@@ -29,9 +29,7 @@ st.set_page_config(page_title='Snowflake', layout='wide',
                 #    initial_sidebar_state=st.session_state.get('sidebar_state', 'collapsed'),
 )
 
-st.image("./logo/snowflake_cheatsheet_logo_v2.png", use_container_width=True )
-
-st.snow()
+st.image("./logo/snowflake_cheatsheet_logo.png", use_container_width=True )
 
 _, exp_col, _ = st.columns([1,3,1])
 with exp_col:
@@ -194,3 +192,7 @@ with st.sidebar.expander("Acknowledgments"):
 
     Lastly, a special thanks to [**Jessica Smith**](https://www.linkedin.com/in/jessica-s-095a861b3/), a true champion of the Streamlit platform, for always encouraging me to create fun things in Streamlit and for her continuous support within the vibrant Streamlit community.
     """)
+
+# Footer
+st.markdown("---")
+st.markdown("<div style='text-align: center; padding: 20px;'><p>Aqui vai o rodapé</p></div>", unsafe_allow_html=True)
